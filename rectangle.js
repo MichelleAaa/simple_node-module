@@ -1,6 +1,6 @@
 module.exports = (x, y, callback) => {
-    if (x <= 0 || y <= 0) {
-        callback(new Error(`Rectangle dimensions must be greater than zero. Received: ${x}, ${y}`));
+    if (x <= 0 || y <= 0) { //first we check to make sure there’s no errors.
+        callback(new Error(`Rectangle dimensions must be greater than zero. Received: ${x}, ${y}`)); //the error object is a global object in JS that contains information about an error.
     } else {
         setTimeout(() =>
             callback(null, {

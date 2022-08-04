@@ -1,9 +1,9 @@
-const rect = require('./rectangle');
+ const rect = require('./rectangle');
 
 function solveRect(l, w) {
     console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
 
-    rect(l, w, (err, rectangle) => {
+    rect(l, w, (err, rectangle) => { //the rect function requires two numbers, and a callback function.
         if (err) {
             console.log('ERROR:', err.message);
         } else {
